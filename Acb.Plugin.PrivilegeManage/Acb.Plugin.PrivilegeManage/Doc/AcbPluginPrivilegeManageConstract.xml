@@ -1,0 +1,3221 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Acb.Plugin.PrivilegeManage.Constract</name>
+    </assembly>
+    <members>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.UpdatePasswordNew(Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdatePasswordNewDto)">
+            <summary>
+            
+            </summary>
+            <param name="passwordDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.AddOrganization(Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddAbstractDto)">
+            <summary>
+            添加机构
+            </summary>
+            <param name="organization"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.AddUser(Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto)">
+            <summary>
+            添加用户
+            </summary>
+            <param name="vUser">用户详细信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetUserInfo(System.String)">
+            <summary>
+            通过用户ID获取用户信息
+            </summary>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.DeleteUser(System.String)">
+            <summary>
+            删除用户
+            </summary>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetSubOrganizationsNoChildren(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="organizationId"></param>
+            <param name="page"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.UpdateUser(Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto)">
+            <summary>
+            更新用户
+            </summary>
+            <param name="userUpdateDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetSubOrganization(System.String)">
+            <summary>
+            查找子级机构
+            </summary>
+            <param name="ParentId">父级机构ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.IsHasPrivilege(System.String,System.String,System.String)">
+            <summary>
+            判断用户是否具有该权限
+            </summary>
+            <param name="UserId"></param>
+            <param name="PrivilegeId"></param>
+            <param name="PrivilegeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetSubOrganizationAsPage(System.String,System.Int32,System.Int32)">
+            <summary>
+            分页查找子级机构
+            </summary>
+            <param name="ParentId">父级机构ID</param>
+            <param name="Page">页码</param>
+            <param name="Size">每页行数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetUsers(System.Collections.Generic.IList{System.String})">
+            <summary>
+            批量获取用户信息
+            </summary>
+            <param name="UserIds">用户id列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetOrganizationOfTypeAsPage(System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            根据机构类型获取机构列表
+            </summary>
+            <param name="TypeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetAllOrganizationOfCode(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取父级机构对应的所有机构信息
+            </summary>
+            <param name="Code">机构Code</param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetUsersOfInfo(Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryPageDto)">
+            <summary>
+            通过用户信息查询用户
+            </summary>
+            <param name="userQueryDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetSubOrganizationAsPageAndParent(System.String,System.Int32,System.Int32)">
+            <summary>
+            分页查找子级机构
+            </summary>
+            <param name="ParentId">父级机构ID</param>
+            <param name="Page">页码</param>
+            <param name="Size">每页行数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetOrganizationInfoOfId(System.String)">
+            <summary>
+            根据机构ID获取机构信息
+            </summary>
+            <param name="OrganizationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetPrivileges(System.String)">
+            <summary>
+            根据用户ID获取权限Code
+            </summary>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetRoleCodes(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetOrganizationType(System.String,System.String)">
+            <summary>
+            根据系统id获取机构类型列表
+            </summary>
+            <param name="SystemId"></param>
+            <param name="SystemCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.CorrelateOrganization(Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PartnerDto)">
+            <summary>
+            关联机构
+            </summary>
+            <param name="partnerDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.AddPrivilegeRoleForUser(Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddRoleAndPrivilege)">
+            <summary>
+            为用户绑定角色或者权限
+            </summary>
+            <param name="userAddRoleAndPrivilege"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetOrganizationByDName(System.String)">
+            <summary>
+            通过DName获取机构
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetOrganizations(System.Collections.Generic.IList{System.String})">
+            <summary>
+            批量获取机构信息
+            </summary>
+            <param name="OrganizationIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetForeignOrganizations(System.Collections.Generic.IList{System.String})">
+            <summary>
+            获取与超级合伙人关联机构信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.QueryUserOrganizationsByName(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取用户关联机构以及它的子级机构
+            </summary>
+            <param name="UserId"></param>
+            <param name="Name"></param>
+            <param name="Page"></param>
+            <param name="Size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetAll4sAllOrganizationsOfCode(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取对应的4s店机构
+            </summary>
+            <param name="OrganizationCode"></param>
+            <param name="Page"></param>
+            <param name="Size"></param>
+            <param name="OrganizationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetOrganizationsByNameAsPage(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取机构列表
+            </summary>
+            <param name="TypeId"></param>
+            <param name="Name"></param>
+            <param name="SystemId"></param>
+            <param name="OrganizationId"></param>
+            <param name="TypeName"></param>
+            <param name="SystemCode"></param>
+            <param name="Page"></param>
+            <param name="Size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetMyInfoOfId(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetUsers(System.String,System.String,System.Int32,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="UserId"></param>
+            <param name="Name"></param>
+            <param name="Role"></param>
+            1:车主；8：驻店员；4：销售员；2：安装工
+            <param name="IsBeilian"></param>
+            <param name="Page"></param>
+            <param name="Size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetV2UsersAll(System.String,System.Int32,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Name"></param>
+            <param name="Role"></param>
+            1:车主；8：驻店员；4：销售员；2：安装工
+            <param name="IsBeilian"></param>
+            <param name="Page"></param>
+            <param name="Size"></param>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetUnits(System.String,System.String,System.Boolean,System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            
+            
+            </summary>
+            <param name="UserId"></param>
+            <param name="Name"></param>
+            <param name="IsSub"></param>
+            <param name="TypeName"></param>
+            8:4s店；32：保险公司；4：金融公司
+            <param name="Page"></param>
+            <param name="Size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.QueryUserRelationUserByName(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            通过电话或者用户名查询与用户关联机构的用户
+            </summary>
+            <param name="UserId"></param>
+            <param name="Name"></param>
+            <param name="Page"></param>
+            <param name="Size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetV2UserInfos(System.Collections.Generic.IList{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="UserIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.DeleteOrganization(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="OrganizationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetV2UnitGroup(System.String,System.Int32,System.Int32)">
+            <summary>
+            获取v2区域分组
+            </summary>
+            <param name="Page"></param>
+            <param name="Size"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetParentList(System.String)">
+            <summary>
+            获取父级机构列表E:\Acb.UPMS\Acb.UPMS\Acb.Plugin.PrivilegeManage\Acb.Plugin.PrivilegeManage\Plugin\PolicyPrivilegeManagePlugin.User.cs
+            </summary>
+            <param name="OrganizationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.GetRelationOrganizations(System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.Collections.Generic.IList{Dynamic.Core.Models.KeyValueItem})">
+            <summary>
+            获取关联机构列表
+            </summary>
+            <param name="OrganizationCode"></param>
+            <param name="Name"></param>
+            <param name="Page"></param>
+            <param name="Size"></param>
+            <param name="OrganizationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Acb.Plugin.PrivilegeManage.Constract.IPrivilegeManageConstract.QueryOrganization(Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationQueryDto)">
+            <summary>
+            查询机构
+            </summary>
+            <param name="queryDto"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.AbstractDto.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.AbstractDto.Name">
+            <summary>
+            名字
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionAddDto">
+            <summary>
+            属性视图
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionAddDto.Name">
+            <summary>
+            属性名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionAddDto.Value">
+            <summary>
+            属性值
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoAbstractDto.Name">
+            <summary>
+            属性名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoAbstractDto.Value">
+            <summary>
+            属性值
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.Id">
+            <summary>
+            属性ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.Name">
+            <summary>
+            属性名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.Value">
+            <summary>
+            属性值
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.AttributionTypeId">
+            <summary>
+            属性类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.ChineseName">
+            <summary>
+            属性类型中文名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.EnglishName">
+            <summary>
+            属性类型英文名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.WidgetType">
+            <summary>
+            属性控件类型
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.WidgetTip">
+            <summary>
+            属性控件提示
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.IsRequired">
+            <summary>
+            属性是否为必填
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.ValidVerifyType">
+            <summary>
+            属性校验类型
+            0.手机号校验；1.email校验；2.数字校验；3.账号校验
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.OptionItems">
+            <summary>
+            选项列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.OrganizationTypeId">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.IsBase">
+            <summary>
+            是否为基础类型
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionInfoDto.ApiName">
+            <summary>
+            控件对应的API名
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeAddDto">
+            <summary>
+            属性类型视图
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeAddDto.ChineseName">
+            <summary>
+            属性类型标题
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeAddDto.EnglishName">
+            <summary>
+            属性类型对应的英文名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeAddDto.WidgetType">
+            <summary>
+            属性控件类型
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeAddDto.WidgetTip">
+            <summary>
+            属性控件提示
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeAddDto.IsRequired">
+            <summary>
+            属性是否为必填
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeAddDto.ValidVerifyType">
+            <summary>
+            属性校验类型
+            0.手机号校验；1.email校验；2.数字校验；3.账号校验
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeAddDto.IsBase">
+            <summary>
+            是否为默认字段
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeAddDto.IsSearch">
+            <summary>
+            是否可搜索
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeAddDto.OptionItems">
+            <summary>
+            选项列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeAddDto.ApiName">
+            <summary>
+            控件对应的API名
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeInfoDto">
+            <summary>
+            属性类型视图
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeInfoDto.Id">
+            <summary>
+            属性类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeInfoDto.ChineseName">
+            <summary>
+            属性类型标题
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeInfoDto.EnglishName">
+            <summary>
+            属性类型英文名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeInfoDto.WidgetType">
+            <summary>
+            属性控件类型
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeInfoDto.WidgetTip">
+            <summary>
+            属性控件提示
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeInfoDto.IsRequired">
+            <summary>
+            属性是否为必填
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeInfoDto.ValidVerifyType">
+            <summary>
+            属性校验类型
+            0.手机号校验；1.email校验；2.数字校验；3.账号校验
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeInfoDto.OptionItems">
+            <summary>
+            选项列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeInfoDto.OrganizationTypeId">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeInfoDto.IsBase">
+            <summary>
+            是否默认字段类型
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeInfoDto.IsSearch">
+            <summary>
+            是否可搜索
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeInfoDto.ApiName">
+            <summary>
+            控件对应的API名
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeQueryInfoDto">
+            <summary>
+            属性类型视图
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeQueryInfoDto.ChineseName">
+            <summary>
+            属性类型标题
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeQueryInfoDto.EnglishName">
+            <summary>
+            属性类型英文名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeQueryInfoDto.WidgetType">
+            <summary>
+            属性控件类型
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeQueryInfoDto.WidgetTip">
+            <summary>
+            控件提示
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeQueryInfoDto.ValidVerifyType">
+            <summary>
+            属性校验类型
+            0.手机号校验；1.email校验；2.数字校验；3.账号校验
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeQueryInfoDto.OptionItems">
+            <summary>
+            选项列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeQueryInfoDto.OrganizationTypeId">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeQueryInfoDto.IsSearch">
+            <summary>
+            是否可搜索
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.AttributionTypeQueryInfoDto.ApiName">
+            <summary>
+            控件对应的API名
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.OrganizationAttributionQueryDto">
+            <summary>
+            机构属性对象
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.OrganizationAttributionQueryDto.Name">
+            <summary>
+            属性英文名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Attribution.OrganizationAttributionQueryDto.Value">
+            <summary>
+            属性值
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemAddDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemAddDto.Name">
+            <summary>
+            菜单名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemAddDto.FrontSystemCode">
+            <summary>
+            前端系统code
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemAddDto.FrontSystemName">
+            <summary>
+            前端系统名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemAddDto.SystemId">
+            <summary>
+            后端系统ID
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemContentDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemContentDto.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemContentDto.Path">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemContentDto.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemContentDto.Icon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemContentDto.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemContentDto.Children">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemDto.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemDto.FrontSystemCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemDto.FrontSystemName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.ItemDto.Items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.JsonItemEditDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.JsonItemEditDto.ParentId">
+            <summary>
+            父级菜单id
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.JsonItemEditDto.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.JsonItemEditDto.Path">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.JsonItemEditDto.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.JsonItemEditDto.Icon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Item.JsonItemEditDto.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeAddDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeAddDto.Name">
+            <summary>
+            机构类型名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeAddDto.SystemId">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeAddDto.Instruction">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeAddDto.IsRelevancy">
+            <summary>
+            是否关联区域
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeAddDto.AttributionTypes">
+            <summary>
+            属性类型
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeDto">
+            <summary>
+            机构类型
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeDto.Id">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeDto.Name">
+            <summary>
+            机构类型名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeDto.Instruction">
+            <summary>
+            机构类型说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeDto.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="F:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeDto.attributionTypes">
+            <summary>
+            属性类型列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeUpdateDto.Id">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeUpdateDto.Name">
+            <summary>
+            机构类型名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeUpdateDto.SystemId">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeUpdateDto.Instruction">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeUpdateDto.IsRelevancy">
+            <summary>
+            是否关联区域
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.OrganizationType.OrganizationTypeUpdateDto.AttributionTypes">
+            <summary>
+            属性类型
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentAddDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentAddDto.Id">
+            <summary>
+            部门ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentAddDto.ParentOrganizationCode">
+            <summary>
+            父级机构码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentAddDto.ParentOrganizationId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentAddDto.ParentDepartmentCode">
+            <summary>
+            父级部门码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentAddDto.ParentDepartmentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentAddDto.Name">
+            <summary>
+            部门名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentAddDto.Instruction">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentAddDto.State">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentAddDto.IsArea">
+            <summary>
+            是否为区域
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentInfoDto.ParentOrganizationName">
+            <summary>
+            所属机构
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentInfoDto.ParentDepartmentName">
+            <summary>
+            上级部门
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentInfoDto.Id">
+            <summary>
+            部门ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentInfoDto.Code">
+            <summary>
+            部门编码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentInfoDto.Name">
+            <summary>
+            部门名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentInfoDto.State">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentInfoDto.Instruction">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentPageQueryDto.Page">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentPageQueryDto.Size">
+            <summary>
+            每页行数
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentPageQueryDto.QueryDto">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentPageQueryDto.SystemId">
+            <summary>
+            系统Id
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentPageQueryDto.IsHasQueryConditions">
+            <summary>
+            是否包含查询条件
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentQueryDto.Name">
+            <summary>
+            查询名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentQueryDto.ParentOrganizationCode">
+            <summary>
+            父级机构编码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentQueryDto.State">
+            <summary>
+            状态码
+            -1:表示不参与搜索；0：表示为false;1:表示为true
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentUpdateDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentUpdateDto.Id">
+            <summary>
+            部门ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentUpdateDto.Name">
+            <summary>
+            部门名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentUpdateDto.Instruction">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentUpdateDto.State">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.DepartmentUpdateDto.IsArea">
+            <summary>
+            是否为区域
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.FchRquestInfo.UnionId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.FchRquestInfo.UnionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.FchRquestInfo.LicenceAttachmentUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.FchRquestInfo.UserName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.FchRquestInfo.UserNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.FchRquestInfo.UserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.FchRquestInfo.Email">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAbstractDto.HierarchyType">
+            <summary>
+            层级类型
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAbstractDto.ParentName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAbstractDto.ParentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAbstractDto.ParentCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAbstractDto.Children">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddAbstractDto.Id">
+            <summary>
+            机构ID，用于导数据使用
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddAbstractDto.TypeId">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddAbstractDto.TypeName">
+            <summary>
+            机构类型名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddAbstractDto.SystemCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddAbstractDto.Attributions">
+            <summary>
+            属性json字符串
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddDto">
+            <summary>
+            机构视图
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddDto.ParentId">
+            <summary>
+            父级机构ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddDto.ParentCode">
+            <summary>
+            父级机构码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddDto.Name">
+            <summary>
+            机构名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddDto.TypeId">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddDto.HierarchyType">
+            <summary>
+            层级类型
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddDto.IsArea">
+            <summary>
+            是否为区域
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAddDto.ExtendAttribution">
+            <summary>
+            机构对应的属性
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAllDto.parentList">
+            <summary>
+            父级单级机构树
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationAllDto.parentAllList">
+            <summary>
+            父级全域机构树
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto">
+            <summary>
+            机构视图
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.Id">
+            <summary>
+            机构ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.Code">
+            <summary>
+            机构码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.ParentId">
+            <summary>
+            父级机构ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.ParentCode">
+            <summary>
+            父级机构码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.ParentName">
+            <summary>
+            父级机构名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.Name">
+            <summary>
+            机构名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.TypeId">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.HierarchyType">
+            <summary>
+            层级类型
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.IsHasChildren">
+            <summary>
+            是否含有子级
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.IsHasChildOrganization">
+            <summary>
+            是否含有子级机构
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.ExtendAttribution">
+            <summary>
+            扩展属性
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.IsArea">
+            <summary>
+            是否为区域
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.IsRelevancy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.Children">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationDto.DName">
+            <summary>
+            代码加机构简称
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationForeignDto.OrganizationId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationForeignDto.UnionId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationForeignDto.UnionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoDto">
+            <summary>
+            机构信息
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoDto.organization">
+            <summary>
+            机构基础信息
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoDto.attributions">
+            <summary>
+            机构属性列表
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoMoreDto">
+            <summary>
+            机构视图
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoMoreDto.Id">
+            <summary>
+            机构ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoMoreDto.Code">
+            <summary>
+            机构码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoMoreDto.ParentId">
+            <summary>
+            父级机构ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoMoreDto.ParentCode">
+            <summary>
+            父级机构码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoMoreDto.ParentName">
+            <summary>
+            父级机构名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoMoreDto.Name">
+            <summary>
+            机构名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoMoreDto.TypeId">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoMoreDto.HierarchyType">
+            <summary>
+            层级类型
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoMoreDto.IsHasChildren">
+            <summary>
+            是否含有子级
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoMoreDto.IsHasChildOrganization">
+            <summary>
+            是否含有子级机构
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoMoreDto.ExtendAttribution">
+            <summary>
+            扩展属性
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationInfoMoreDto.IsRelevancy">
+            <summary>
+            是否关联
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationQueryDto.keyValues">
+            <summary>
+            查询条件列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationQueryDto.TypeId">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationQueryDto.SystemId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationQueryDto.SystemCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationQueryPageDto.Page">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationQueryPageDto.Size">
+            <summary>
+            每页行数
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationQueryPageDto.keyValues">
+            <summary>
+            查询条件列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationQueryPageDto.TypeId">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationQueryPageDto.SystemId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationQueryPageDto.SystemCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationUpdateDto">
+            <summary>
+            机构视图
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationUpdateDto.Id">
+            <summary>
+            机构ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.OrganizationUpdateDto.Attributions">
+            <summary>
+            属性json字符串
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PartnerDto">
+            <summary>
+            合伙人信息
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PartnerDto.PartnerId">
+            <summary>合伙人ID</summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PartnerDto.PartnerName">
+            <summary>合伙人名称</summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PartnerDto.PartnerMobile">
+            <summary>合伙人电话</summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PartnerDto.PartnerEmail">
+            <summary>邮箱</summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PartnerDto.PartnerUnitId">
+            <summary>合伙人机构id</summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PartnerDto.PartnerUnitName">
+            <summary>合伙人机构名称</summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PartnerDto.PartnerCode">
+            <summary>统一社会信用代码</summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PartnerDto.PartnerCard">
+            <summary>身份证号码</summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PartnerDto.PartnerUrl">
+            <summary>营业执照附件地址</summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PartnerDto.Message">
+            <summary>错误信息</summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionAddDto">
+            <summary>
+            添加岗位
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionAddDto.ParentOrganizationCode">
+            <summary>
+            上级机构Code
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionAddDto.ParentDepartmentCode">
+            <summary>
+            上级部门Code
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionAddDto.Name">
+            <summary>
+            岗位名称
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionAddDto.Roles">
+            <summary>
+            关联角色列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionAddDto.State">
+            <summary>
+            岗位状态
+            true：启用;false：禁用
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionAddDto.Instruction">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionInfoDto.ParentOrganizationName">
+            <summary>
+            所属机构
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionInfoDto.ParentDepartmentName">
+            <summary>
+            所属部门
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionInfoDto.Id">
+            <summary>
+            岗位ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionInfoDto.Code">
+            <summary>
+            岗位编码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionInfoDto.Name">
+            <summary>
+            岗位名称
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionInfoDto.Roles">
+            <summary>
+            所属角色
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionInfoDto.State">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionInfoDto.Instruction">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionPageQueryDto.Page">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionPageQueryDto.Size">
+            <summary>
+            每页行数
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionPageQueryDto.QueryDto">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionPageQueryDto.SystemId">
+            <summary>
+            系统Id
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionPageQueryDto.IsHasQueryConditions">
+            <summary>
+            是否包含查询条件
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionQueryDto.Name">
+            <summary>
+            查询名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionQueryDto.ParentOrganizationCode">
+            <summary>
+            父级机构编码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionQueryDto.State">
+            <summary>
+            状态码
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionUpdateDto">
+            <summary>
+            添加岗位
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionUpdateDto.Name">
+            <summary>
+            岗位名称
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionUpdateDto.Roles">
+            <summary>
+            关联角色列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionUpdateDto.State">
+            <summary>
+            岗位状态
+            true：启用;false：禁用
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.PositionUpdateDto.Instruction">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.RelationOrganizationAbstractDto.IsRelationArea">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.RelationOrganizationDetailDto">
+            <summary>
+            机构视图
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.RelationOrganizationDetailDto.RelationId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.RelationOrganizationDetailDto.IsHasChildOrganization">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.RelationOrganizationDetailDto.IsHasChildren">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.ScsjOrganizationDto.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.ScsjOrganizationDto.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.ScsjOrganizationDto.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.ScsjOrganizationDto.UnitCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Organization.ScsjOrganizationDto.ShorterName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeAddDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeAddDto.Name">
+            <summary>
+            权限名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeAddDto.Instruction">
+            <summary>
+            权限描述
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeAddDto.GroupId">
+            <summary>
+            权限组ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeAddDto.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeAddForNewGroupDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeAddForNewGroupDto.Name">
+            <summary>
+            权限名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeAddForNewGroupDto.Instruction">
+            <summary>
+            权限描述
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeAddForNewGroupDto.GroupName">
+            <summary>
+            权限组名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeAddForNewGroupDto.SystemId">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeAddForNewGroupDto.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeDto.Id">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeDto.OriginalCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeDto.Name">
+            <summary>
+            权限名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeDto.GroupId">
+            <summary>
+            权限组ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeDto.Instruction">
+            <summary>
+            权限描述
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeDto.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeDto.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupAddDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupAddDto.Name">
+            <summary>
+            权限组名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupAddDto.SystemId">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupAllDto.Id">
+            <summary>
+            权限组ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupAllDto.Name">
+            <summary>
+            权限组名
+            </summary>
+        </member>
+        <member name="F:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupAllDto.Privileges">
+            <summary>
+            对应的权限列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupAllDto.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupAllDto.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupDto.Id">
+            <summary>
+            权限组ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupDto.Name">
+            <summary>
+            权限组名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupDto.SystemId">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupUpdateDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupUpdateDto.Id">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeGroupUpdateDto.Name">
+            <summary>
+            权限名
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeMultiAddDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeMultiAddDto.Names">
+            <summary>
+            权限名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeMultiAddDto.GroupId">
+            <summary>
+            权限组ID
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeUpdateDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeUpdateDto.Id">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeUpdateDto.Name">
+            <summary>
+            权限名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Privilege.PrivilegeUpdateDto.Instruction">
+            <summary>
+            权限描述
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Relation.RelationOrganizationDto">
+            <summary>
+            用户机构关系对象
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Relation.RelationOrganizationDto.OrganizationId">
+            <summary>
+            机构ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Relation.RelationOrganizationDto.RelationOrganizationId">
+            <summary>
+            关联机构ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Relation.RelationOrganizationDto.OrganizationCode">
+            <summary>
+            机构ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Relation.RelationOrganizationDto.RelationOrganizationCode">
+            <summary>
+            关联机构ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Relation.RelationOrganizationDto.RelationAreaId">
+            <summary>
+            关联区域ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Relation.RelationOrganizationDto.RelationAreaCode">
+            <summary>
+            关联区域CODE
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Relation.UserOrganizationDto">
+            <summary>
+            用户机构关系对象
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Relation.UserOrganizationDto.OrganizationId">
+            <summary>
+            机构ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Relation.UserOrganizationDto.HierarchyType">
+            <summary>
+            层级ID
+            0:机构；1：部门；2：岗位
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Relation.UserOrganizationDto.OrganizationType">
+            <summary>
+            机构类型ID
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.JsonItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.JsonItem.Path">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.JsonItem.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.JsonItem.Icon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.JsonItem.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.JsonItem.Children">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RelationRolePrivilegeAddDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RelationRolePrivilegeAddDto.RoleId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RelationRolePrivilegeAddDto.PrivilegeIds">
+            <summary>
+            权限ID列表
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleAddDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleAddDto.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleAddDto.Name">
+            <summary>
+            角色名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleAddDto.State">
+            <summary>
+            角色状态
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleAddDto.SystemId">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleAddDto.Instruction">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleAddDto.ItemId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleAddDto.JsonItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleAddDto.Items">
+            <summary>
+            菜单id列表
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleDto.Id">
+            <summary> 角色ID </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleDto.OriginalCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleDto.Name">
+            <summary> 角色名 </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleDto.State">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleDto.SystemId">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleDto.Instruction">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleDto.JsonItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleDto.SystemJsonItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleDto.ItemId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleDto.CreateTime">
+            <summary> 创建时间 </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleDto.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleUpdateDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleUpdateDto.Id">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleUpdateDto.Name">
+            <summary>
+            角色名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleUpdateDto.State">
+            <summary>
+            角色状态
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleUpdateDto.Instruction">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.RoleUpdateDto.JsonItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.SystemJsonItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.SystemJsonItem.FrontSystemCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.SystemJsonItem.FrontSystemName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.Role.SystemJsonItem.Items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemAddDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemAddDto.Name">
+            <summary> 系统名 </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemAddDto.Code">
+            <summary>
+            系统Code
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemAddDto.EnglishName">
+            <summary>
+            英文名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemAddDto.LogoUrl">
+            <summary>
+            LogoUrl
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemAddDto.Instruction">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemDto.Id">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemDto.Code">
+            <summary>
+            系统Code
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemDto.Name">
+            <summary> 系统名 </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemDto.EnglishName">
+            <summary>
+            英文名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemDto.LogoUrl">
+            <summary>
+            LogoUrl
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemDto.Instruction">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemDto.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemUpdateDto.Id">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemUpdateDto.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemUpdateDto.Name">
+            <summary> 系统名 </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemUpdateDto.EnglishName">
+            <summary>
+            英文名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemUpdateDto.LogoUrl">
+            <summary>
+            LogoUrl
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.System.SystemUpdateDto.Instruction">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.PositionRolePrivilege.PositionRoles">
+            <summary>
+            对应的岗位角色列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationOrganizationUserAddDto.OrganizationCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationOrganizationUserAddDto.UserType">
+            <summary>
+            1:驻店员；2：销售员
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationOrganizationUserAddDto.Users">
+            <summary>
+            用户列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationOrganizationUserDto.UserType">
+            <summary>
+            1:驻店员；2：销售员
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.RelationId">
+            <summary>
+            关联ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.OpenId">
+            <summary>
+            第三方用户ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.PortraitUrl">
+            <summary>
+            用户头像
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.UnionId">
+            <summary>
+            第三方团体ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.Account">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.Channel">
+            <summary>
+            来源渠道
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.Telephone">
+            <summary>
+            用户电话号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.Email">
+            <summary>
+            用户电子邮箱账号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.State">
+            <summary>
+            用户状态
+            true：启用；false：禁用
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.Instruction">
+            <summary>
+            用户说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.LastLoginTime">
+            <summary>
+            最后登录时间
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.SystemId">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserInfoDto.OrganizationIds">
+            <summary>
+            用户所属机构列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserPrivilegeDto.UserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserPrivilegeDto.PrivilegeIds">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserPrivilegeDto.PrivilegeCodes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserRoleDto.UserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.RelationUserRoleDto.RoleIds">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto">
+            <summary>
+            用户视图
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.OpenId">
+            <summary>
+            第三方用户ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.PortraitUrl">
+            <summary>
+            用户头像
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.UnionId">
+            <summary>
+            第三方UnionID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.Channel">
+            <summary>
+            来源渠道
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.Account">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.Telephone">
+            <summary>
+            电话
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.State">
+            <summary>
+            是否启用
+            true：启用；false：禁用
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.Instruction">
+            <summary>
+            用户说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.OrganizationIds">
+            <summary>
+            用户所属机构列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.ExtendAttribution">
+            <summary>
+            用户扩展属性
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.SystemId">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.SystemCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.UserType">
+            <summary>
+            用户类型
+            0：APP用户；1：微信用户；2：QQ用户
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.SessionKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddDto.IsNoEncryptPassword">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddRoleAndPrivilege.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddRoleAndPrivilege.Roles">
+            <summary>
+            角色列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddRoleAndPrivilege.RoleCodes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddRoleAndPrivilege.Privileges">
+            <summary>
+            权限列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserAddRoleAndPrivilege.PrivilegeCodes">
+            <summary>
+            权限Code列表
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto">
+            <summary>
+            用户信息类
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.Id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.OpenId">
+            <summary>
+            第三方用户ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.PortraitUrl">
+            <summary>
+            用户头像
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.UnionId">
+            <summary>
+            第三方团体ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.Account">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.Channel">
+            <summary>
+            来源渠道
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.Telephone">
+            <summary>
+            用户电话号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.Email">
+            <summary>
+            用户电子邮箱账号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.State">
+            <summary>
+            用户状态
+            true：启用；false：禁用
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.Instruction">
+            <summary>
+            用户说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.LastLoginTime">
+            <summary>
+            最后登录时间
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.SystemId">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.SystemCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.OrganizationIds">
+            <summary>
+            用户所属机构列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.Privileges">
+            <summary>
+            用户权限列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.PrivilegesCode">
+            <summary>
+            用户权限Code列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.RolesCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.SessionKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.JsonItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoDto.SystemJsonItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.Token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.Id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.OpenId">
+            <summary>
+            第三方用户ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.PortraitUrl">
+            <summary>
+            用户头像
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.UnionId">
+            <summary>
+            第三方团体ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.Account">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.Channel">
+            <summary>
+            来源渠道
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.Telephone">
+            <summary>
+            用户电话号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.Email">
+            <summary>
+            用户电子邮箱账号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.State">
+            <summary>
+            用户状态
+            true：启用；false：禁用
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.Instruction">
+            <summary>
+            用户说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.LastLoginTime">
+            <summary>
+            最后登录时间
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.SystemId">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.OrganizationIds">
+            <summary>
+            用户所属机构列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserInfoLoginDto.SessionKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserPositionDto.PositionId">
+            <summary>
+            岗位ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserPositionDto.PositionCode">
+            <summary>
+            岗位Code
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserPositionDto.DepartmentId">
+            <summary>
+            部门ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserPositionDto.DepartmentCode">
+            <summary>
+            部门Code
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserPositionDto.OrganizationId">
+            <summary>
+            机构ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserPositionDto.OrganizationCode">
+            <summary>
+            机构Code
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserPositionDto.DepartmentName">
+            <summary>
+            用户所属部门名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserPositionDto.PositionName">
+            <summary>
+            用户所属岗位名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserPositionDto.OrganizationName">
+            <summary>
+            用户机构名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserPositionDto.UserType">
+            <summary>
+            0:普通用户；1：驻店员；2：销售员
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto">
+            <summary>
+            用户查询信息
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.Id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.OpenId">
+            <summary>
+            第三方用户ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.UnionId">
+            <summary>
+            第三方UnitID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.Telephone">
+            <summary>
+            电话号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.Email">
+            <summary>
+            电子邮箱
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.State">
+            <summary>
+            状态:-1:不限；0：禁用；1：启用
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.Channel">
+            <summary>
+            渠道号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.SystemId">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.SystemCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.OrganizationCode">
+            <summary>
+            所属机构
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.DepartmentCode">
+            <summary>
+            所属部门
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.PositionCode">
+            <summary>
+            所属岗位
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.OrganizationId">
+            <summary>
+            所属机构
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.DepartmentId">
+            <summary>
+            所属部门
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.PositionId">
+            <summary>
+            所属岗位
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.TypeId">
+            <summary>
+            所属机构类型ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.SessionKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryDto.UserType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto">
+            <summary>
+            用户查询信息
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.Id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.OpenId">
+            <summary>
+            第三方用户ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.UnionId">
+            <summary>
+            第三方UnitID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.Telephone">
+            <summary>
+            电话号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.Email">
+            <summary>
+            电子邮箱
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.State">
+            <summary>
+            状态:-1:不限；0：禁用；1：启用
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.Channel">
+            <summary>
+            渠道号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.SystemId">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.SystemCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.OrganizationCode">
+            <summary>
+            所属机构
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.DepartmentCode">
+            <summary>
+            所属部门
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.PositionCode">
+            <summary>
+            所属岗位
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.OrganizationId">
+            <summary>
+            所属机构
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.DepartmentId">
+            <summary>
+            所属部门
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.PositionId">
+            <summary>
+            所属岗位
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryNewDto.SessionKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryPageDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryPageDto.UserQuery">
+            <summary>
+            用户查询信息类
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryPageDto.Page">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserQueryPageDto.Size">
+            <summary>
+            每页个数
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserRolePrivilege.Id">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserRolePrivilege.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserRolePrivilege.RolePrivilegePosition">
+            <summary>
+            岗位角色、权限列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserRolePrivilege.RolePrivilegeSelf">
+            <summary>
+            自身的角色列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserRolePrivilege.Privileges">
+            <summary>
+            自身的权限列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.OpenId">
+            <summary>
+            第三方用户ID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.PortraitUrl">
+            <summary>
+            用户头像
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.UnionId">
+            <summary>
+            第三方UnionID
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.Channel">
+            <summary>
+            来源渠道
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.Account">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.Telephone">
+            <summary>
+            电话
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.State">
+            <summary>
+            是否启用
+            true：启用；false：禁用
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.Instruction">
+            <summary>
+            用户说明
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.OrganizationIds">
+            <summary>
+            用户所属机构列表
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.ExtendAttribution">
+            <summary>
+            用户扩展属性
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.UserType">
+            <summary>
+            用户类型
+            0：APP用户；1：微信用户；2：QQ用户
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdateDto.SessionKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdatePasswordDto.Password">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdatePasswordDto.UserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdatePasswordNewDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdatePasswordNewDto.OldPassword">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdatePasswordNewDto.NewPassword">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.UserUpdatePasswordNewDto.UserId">
+            <summary>
+            用户密码
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.Account">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.Mobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.Email">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.Instruction">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.Sex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.SpareName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.SpareMobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.CreatorId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.IsCompany">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.NickName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.SourceType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.Birthday">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.StoreCredit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.RoleValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.Vip">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.HxUserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.Location">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.Vehicle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.VehicleName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.Role">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.UnitId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.UnitName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.ShorterName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.UnitMobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.ContactName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.ContactMobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.ContactName2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.ContactMobile2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.UnitState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.UnitAddress">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.UnitRemark">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.IdCard">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Acb.Plugin.PrivilegeManage.Constract.Models.Dtos.User.V2UserInfoDto.CardType">
+            <summary>
+            `
+            </summary>
+        </member>
+        <member name="T:Acb.Plugin.PrivilegeManage.Constract.Models.Enum.UserTypeEnum">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Acb.Plugin.PrivilegeManage.Constract.Models.Enum.UserTypeEnum.Normal">
+            <summary>
+            普通登录
+            </summary>
+        </member>
+        <member name="F:Acb.Plugin.PrivilegeManage.Constract.Models.Enum.UserTypeEnum.App">
+            <summary>
+            APP登录
+            </summary>
+        </member>
+        <member name="F:Acb.Plugin.PrivilegeManage.Constract.Models.Enum.UserTypeEnum.WeChat">
+            <summary>
+            微信登录
+            </summary>
+        </member>
+        <member name="F:Acb.Plugin.PrivilegeManage.Constract.Models.Enum.UserTypeEnum.QQ">
+            <summary>
+            QQ登录
+            </summary>
+        </member>
+        <member name="F:Acb.Plugin.PrivilegeManage.Constract.Models.Enum.UserTypeEnum.LittleProgram">
+            <summary>
+            小程序登录
+            </summary>
+        </member>
+        <member name="F:Acb.Plugin.PrivilegeManage.Constract.Models.Enum.UserTypeEnum.Factory">
+            <summary>
+            厂商
+            </summary>
+        </member>
+        <member name="F:Acb.Plugin.PrivilegeManage.Constract.Models.Enum.UserTypeEnum.Dealer">
+            <summary>
+            经销商
+            </summary>
+        </member>
+    </members>
+</doc>

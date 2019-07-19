@@ -1,0 +1,1071 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HiAuto.Lbs</name>
+    </assembly>
+    <members>
+        <member name="P:HiAuto.Lbs.Amap.AmapDto.Status">
+            <summary>
+            返回结果状态值（返回值为 0 或 1，0 表示请求失败；1 表示请求成功）
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.Amap.AmapDto.Info">
+            <summary>
+            返回状态说明（当 status 为 0 时，info 会返回具体错误原因，否则返回“OK”）
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.Amap.AmapDto.InfoCode">
+            <summary>
+            错误码（正常，：1000，其他参考错误码列表）
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.Amap.Result.Country">
+            <summary>
+            国家
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.Amap.Result.Province">
+            <summary>
+            省、直辖市
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.Amap.Result.City">
+            <summary>
+            城市名称
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Result.CityCode">
+            <summary>
+            城市编码
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Result.Adcode">
+            <summary>
+            行政区编码
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Result.Radius">
+            <summary>
+            定位精度半径，单位：米
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.Amap.AmapRegeoCodeDto">
+            <summary>
+            逆地理编码
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.Amap.AmapRegeoCodeDto.RegeoCode">
+            <summary>
+            逆地理编码列表
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.Amap.RegeoCode">
+            <summary>
+            逆地理编码列表
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.Amap.AddressComponent">
+            <summary>
+            地址元素
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.Amap.AddressComponent.Country">
+            <summary>
+            国家
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.Amap.AddressComponent.Province">
+            <summary>
+            省、直辖市
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.Amap.AddressComponent.City">
+            <summary>
+            城市名称
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.AddressComponent.CityCode">
+            <summary>
+            城市编码
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.AddressComponent.District">
+            <summary>
+            区县
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.AddressComponent.Adcode">
+            <summary>
+            行政区编码
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.AddressComponent.Township">
+            <summary>
+            乡镇
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.Amap.ConvertDto">
+            <summary>
+            坐标转换
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.Amap.ConvertDto.Locations">
+            <summary>
+            转换之后的坐标。若有多个坐标，则用 “;”进行区分和间隔
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.DrivingDto.Count">
+            <summary>
+            路劲条数
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.DrivingDto.Route">
+            <summary>
+            路劲
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Route.Origin">
+            <summary>
+            出发点
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Route.Destination">
+            <summary>
+            目的地
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Route.ArrPath">
+            <summary>
+            驾车换乘方案
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Path.Distance">
+            <summary>
+            行驶距离(单位：米)
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Path.Duration">
+            <summary>
+            预计行驶时间(单位：秒)
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Path.Strategy">
+            <summary>
+            导航策略
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Path.Toll">
+            <summary>
+            道路收费
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Path.TollDistance">
+            <summary>
+            收费路段距离
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Path.Restriction">
+            <summary>
+            限行结果
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Path.TrafficLight">
+            <summary>
+            红灯
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Path.ArrStep">
+            <summary>
+            导航路段
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Step.Instruction">
+            <summary>
+            行驶指示
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Step.Orientation">
+            <summary>
+            方向
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Step.Distance">
+            <summary>
+            路段距离
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Step.Toll">
+            <summary>
+            路段收费金额
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Step.TollDistance">
+            <summary>
+            收费路段距离
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Step.Polyline">
+            <summary>
+            路段坐标点串
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Step.Action">
+            <summary>
+            导航主要动作
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Amap.Step.AssistantAction">
+            <summary>
+            导航辅助动作
+            </summary>
+        </member>
+        <member name="M:HiAuto.Lbs.AmapLbs.Gcj02_To_Bd09(System.Double,System.Double)">
+            <summary>
+            火星坐标转换为百度坐标（本地算法，与实际有较小误差）
+            </summary>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.AmapLbs.Bd09_To_Gcj02(System.Double,System.Double)">
+            <summary>
+            百度坐标转换为火星坐标（本地算法，与高德地图有较小误差）
+            </summary>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.AmapLbs.Bd09_To_Gcj02(System.String,System.Double,System.Double)">
+            <summary>
+            百度坐标转换为火星坐标（高德官网请求）
+            </summary>
+            <param name="key"></param>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.AmapLbs.Wgs84_To_Gcj02(System.Double,System.Double)">
+            <summary>
+            地球坐标转换为火星坐标（本地算法，与高德地图有较小误差）
+            </summary>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.AmapLbs.Wgs84_To_Gcj02(System.String,System.Double,System.Double)">
+            <summary>
+            地球坐标转换为火星坐标（高德官网请求）
+            </summary>
+            <param name="key"></param>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.AmapLbs.Gcj02_To_Wgs84(System.Double,System.Double)">
+            <summary>
+            火星坐标转换为地球坐标（本地算法，与实际有较小误差）
+            </summary>
+            <param name="key"></param>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.AmapLbs.Convert(System.String,System.Double,System.Double,System.String)">
+            <summary>
+            地球坐标转换为火星坐标（高德官网请求）
+            </summary>
+            <param name="key"></param>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.AmapLbs.Regeo(System.String,System.Double,System.Double)">
+            <summary>
+            逆地理编码
+            </summary>
+            <param name="key">高德地图key</param>
+            <param name="lng">经度</param>
+            <param name="lat">纬度</param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.AmapLbs.LbsLocation(System.String,HiAuto.Lbs.Lbs)">
+            <summary>
+            基站lbs查询位置
+            </summary>
+            <param name="key"></param>
+            <param name="lbs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.AmapLbs.WiFiLocation(System.String,System.Collections.Generic.List{HiAuto.Lbs.WiFi},HiAuto.Lbs.Lbs)">
+            <summary>
+            优先wifi查询位置，否则基站lbs查询位置
+            </summary>
+            <param name="key"></param>
+            <param name="wifi"></param>
+            <param name="lbs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.AmapLbs.MacAddress(System.String)">
+            <summary>
+            mac地址
+            </summary>
+            <param name="mac"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.AmapLbs.Driving(System.String,HiAuto.Lbs.Gps,HiAuto.Lbs.Gps)">
+            <summary>
+            路劲规划（默认获取第一条）
+            </summary>
+            <param name="key"></param>
+            <param name="origin"></param>
+            <param name="destination"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.AmapLbs.ErrorInfo(System.String)">
+            <summary>
+            转换错误代码为状态描述
+            </summary>
+            <param name="code">高德地图错误码</param>
+            <returns></returns>
+        </member>
+        <member name="T:HiAuto.Lbs.BaiduMap.BaiduDto">
+            <summary>
+            百度地图
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.BaiduDto.Status">
+            <summary>
+            本次API访问状态，如果成功返回0，如果失败返回其他数字
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.BaiduMap.GeocoderDto">
+            <summary>
+            逆地理编码
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.BaiduMap.Geocoder">
+            <summary>
+            逆地理编码结果
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.Geocoder.Location">
+            <summary>
+            经纬度
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.Geocoder.FormattedAddress">
+            <summary>
+            详细地址
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.Geocoder.AddressComponent">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.Geocoder.CityCode">
+            <summary>
+            城市id
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.BaiduMap.Location">
+            <summary>
+            位置
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.Location.Lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.Location.Lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.BaiduMap.AddressComponent">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.AddressComponent.Country">
+            <summary>
+            国家
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.AddressComponent.Province">
+            <summary>
+            省
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.AddressComponent.City">
+            <summary>
+            城市
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.AddressComponent.District">
+            <summary>
+            区县
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.AddressComponent.Town">
+            <summary>
+            乡镇
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.AddressComponent.Adcode">
+            <summary>
+            行政区划代码
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.BaiduMap.ConvertDto">
+            <summary>
+            坐标准换
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.BaiduMap.Coordinate">
+            <summary>
+            坐标准换
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.Coordinate.Lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.BaiduMap.Coordinate.Lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.BaiduMap.DrivingDto">
+            <summary>
+            路径规划
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.DrivingDto.Message">
+            <summary>
+            状态码对应的信息
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.DrivingDto.Type">
+            <summary>
+            返回数据类型
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.DrivingDto.Result">
+            <summary>
+            返回的结果
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Result.Restriction">
+            <summary>
+            限行结果提示信息(若无限行路线，则返回空,若无法规避限行，则返回限行提示信息)
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Result.Total">
+            <summary>
+            返回方案的总数
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Result.ArrRoute">
+            <summary>
+            返回的方案集
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Route.Origin">
+            <summary>
+            起点
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Route.Destination">
+            <summary>
+            终点
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Route.Tag">
+            <summary>
+            方案标签
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Route.Distance">
+            <summary>
+            方案距离，单位：米
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Route.Duration">
+            <summary>
+            线路耗时，单位：秒
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Route.Toll">
+            <summary>
+            路线道路收费，单位：元
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Route.TollDistance">
+            <summary>
+            收费路段里程，单位：米
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Route.ArrStep">
+            <summary>
+            路线分段
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Step.Distance">
+            <summary>
+            step的距离信息
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Step.RoadName">
+            <summary>
+            分段的道路名称
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Step.RoadType">
+            <summary>
+            分段的道路类型(枚举值：返回0-9之间的值,0：高速路 1：城市高速路 2:国道 3：省道 4：县道 5：乡镇村道 6：其他道路 7：九级路 8：航线(轮渡) 9：行人道路)
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Step.Toll">
+            <summary>
+            分段道路收费，单位：元
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Step.TollDistance">
+            <summary>
+            分段道路收费路程，单位：米
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Step.TollGateName">
+            <summary>
+            收费站名称
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Step.TollGateLocation">
+            <summary>
+            收费站位置
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Step.StartLocation">
+            <summary>
+            分段起点
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Step.EndLocation">
+            <summary>
+            分段终点
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Step.Path">
+            <summary>
+            分段坐标
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.Step.ArrTrafficCondition">
+            <summary>
+            分段路况详情
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.BaiduMap.TrafficCondition.Status">
+            <summary>
+            路况指数(0 无路况；1 畅通；2 缓行；3 拥堵；4 非常拥堵)
+            </summary>
+        </member>
+        <member name="M:HiAuto.Lbs.BaiduMap.BaiduLbs.Gcj02_To_Bd09(System.Double,System.Double)">
+            <summary>
+            火星坐标转换为百度坐标（本地算法，与实际有较小误差）
+            </summary>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.BaiduMap.BaiduLbs.Gcj02_To_Bd09(System.String,System.Double,System.Double)">
+            <summary>
+            火星坐标转换为百度坐标（百度地图官网）
+            </summary>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.BaiduMap.BaiduLbs.Bd09_To_Gcj02(System.Double,System.Double)">
+            <summary>
+            百度坐标转换为火星坐标（本地算法，与高德地图有较小误差）
+            </summary>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.BaiduMap.BaiduLbs.Bd09_To_Gcj02(System.String,System.Double,System.Double)">
+            <summary>
+            百度坐标转换为火星坐标（高德官网请求）
+            </summary>
+            <param name="key"></param>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.BaiduMap.BaiduLbs.Wgs84_To_Bd09(System.Double,System.Double)">
+            <summary>
+            地球坐标转换为火星坐标（本地算法，与高德地图有较小误差）
+            </summary>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.BaiduMap.BaiduLbs.Wgs84_To_Bd09(System.String,System.Double,System.Double)">
+            <summary>
+            地球坐标转换为火星坐标（高德官网请求）
+            </summary>
+            <param name="key"></param>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.BaiduMap.BaiduLbs.Bd09_To_Wgs84(System.Double,System.Double)">
+            <summary>
+            火星坐标转换为地球坐标（本地算法，与实际有较小误差）
+            </summary>
+            <param name="key"></param>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.BaiduMap.BaiduLbs.Convert(System.String,System.Double,System.Double,System.Int32,System.Int32)">
+            <summary>
+            地球坐标转换为火星坐标（高德官网请求）
+            </summary>
+            <param name="key"></param>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.BaiduMap.BaiduLbs.ConvertErrorInfo(System.Int32)">
+            <summary>
+            坐标转换，转换错误代码为状态描述
+            </summary>
+            <param name="status">百度地图状态码说明</param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.BaiduMap.BaiduLbs.Regeo(System.String,System.Double,System.Double)">
+            <summary>
+            逆地理编码
+            </summary>
+            <param name="key">高德地图key</param>
+            <param name="lng">经度</param>
+            <param name="lat">纬度</param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.BaiduMap.BaiduLbs.GeocoderErrorInfo(System.Int32)">
+            <summary>
+            地理编码，转换错误代码为状态描述
+            </summary>
+            <param name="status">百度地图状态码说明</param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.BaiduMap.BaiduLbs.Driving(System.String,HiAuto.Lbs.Gps,HiAuto.Lbs.Gps)">
+            <summary>
+            路劲规划（默认获取第一条）
+            </summary>
+            <param name="key"></param>
+            <param name="origin"></param>
+            <param name="destination"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.BaiduMap.BaiduLbs.DrivingErrorInfo(System.Int32)">
+            <summary>
+            路劲规划，转换错误代码为状态描述
+            </summary>
+            <param name="status">百度地图状态码说明</param>
+            <returns></returns>
+        </member>
+        <member name="F:HiAuto.Lbs.Cell.CI">
+            <summary>
+            基站Id
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Cell.LAC">
+            <summary>
+            网络识别码
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Cell.RSSI">
+             <summary>
+            信号强度
+             </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.CoordinateLocation.District">
+            <summary>
+            区县
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.CoordinateLocation.Township">
+            <summary>
+            乡镇
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.Gps.Lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:HiAuto.Lbs.Gps.Lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Lbs.MCC">
+            <summary>
+            国家代码
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Lbs.MNC">
+            <summary>
+            运营商编号
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Lbs.Cells">
+            <summary>
+            相邻小区
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.LbsLocation.Radius">
+            <summary>
+            定位精度半径，单位：米
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Location.Lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Location.Lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Location.Address">
+            <summary>
+            详细地址
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Location.Country">
+            <summary>
+            国家
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Location.Province">
+            <summary>
+            省、直辖市
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Location.City">
+            <summary>
+            城市名称
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Location.CityCode">
+            <summary>
+            城市编码
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Location.Adcode">
+            <summary>
+            行政区编码
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.PositionUtil">
+            <summary>
+            坐标转换
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.PositionUtil.PI">
+            <summary>
+            圆周率
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.PositionUtil.a">
+            <summary>
+            卫星椭球坐标投影到平面地图坐标系的投影因子
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.PositionUtil.ee">
+            <summary>
+            偏移量
+            </summary>
+        </member>
+        <member name="M:HiAuto.Lbs.PositionUtil.Wgs84_To_Gcj02(System.Double,System.Double)">
+            <summary>
+            World Geodetic System ==> Mars Geodetic System【WGS84 to 火星坐标系(GCJ-02)】
+            </summary>
+            <param name="lat"></param>
+            <param name="lng"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.PositionUtil.Gcj02_To_Wgs84(System.Double,System.Double)">
+            <summary>
+            Mars Geodetic System ==> World Geodetic System【火星坐标系 (GCJ-02) to WGS84】
+            </summary>
+            <param name="lat"></param>
+            <param name="lng"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.PositionUtil.Gcj02_To_Bd09(System.Double,System.Double)">
+            <summary>
+            World Geodetic System ==> BaiDuMap System【火星坐标系(GCJ-02) 转换 百度坐标系(BD-09)】
+            </summary>
+            <param name="lat"></param>
+            <param name="lng"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.PositionUtil.Bd09_To_Gcj02(System.Double,System.Double)">
+            <summary>
+            BaiDu System ==> Mars Geodetic System【百度坐标系(BD-09) 转换 火星坐标系(GCJ-02)】
+            </summary>
+            <param name="lat"></param>
+            <param name="lon"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.PositionUtil.Bd09_To_Wgs84(System.Double,System.Double)">
+            <summary>
+            BaiDu System ==> System World Geodetic System【百度坐标系 (BD-09) 转换 WGS84】 
+            </summary>
+            <param name="lat"></param>
+            <param name="lon"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.PositionUtil.Wgs84_To_Bd09(System.Double,System.Double)">
+             <summary>
+            System World Geodetic System ==> BaiDu System【WGS84 转换 百度坐标系(BD-09)】
+             </summary>
+             <param name="lat"></param>
+             <param name="lon"></param>
+             <returns></returns>
+        </member>
+        <member name="F:HiAuto.Lbs.Roordinates.Lat">
+            <summary>
+            纬度 
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Roordinates.Lon">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.PositionUtilBak">
+            <summary>
+            各地图API坐标系统比较与转换;
+            WGS84坐标系：即地球坐标系，国际上通用的坐标系。设备一般包含GPS芯片或者北斗芯片获取的经纬度为WGS84地理坐标系,
+            谷歌地图采用的是WGS84地理坐标系（中国范围除外）;
+            GCJ02坐标系：即火星坐标系，是由中国国家测绘局制订的地理信息系统的坐标系统。由WGS84坐标系经加密后的坐标系。
+            谷歌中国地图和搜搜中国地图采用的是GCJ02地理坐标系; BD09坐标系：即百度坐标系，GCJ02坐标系经加密后的坐标系;
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.PositionUtilBak.a">
+            <summary>
+            卫星椭球坐标投影到平面地图坐标系的投影因子
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.PositionUtilBak.ee">
+            <summary>
+            椭球的偏心率
+            </summary>
+        </member>
+        <member name="M:HiAuto.Lbs.PositionUtilBak.WGS84ToGCG02(System.Double,System.Double)">
+            <summary>
+            84 to 火星坐标系 (GCJ-02) World Geodetic System ==> Mars Geodetic System
+            </summary>
+        </member>
+        <member name="M:HiAuto.Lbs.PositionUtilBak.GCG02ToWGS84(System.Double,System.Double)">
+            <summary>
+            火星坐标系 (GCJ-02) to 84 
+            </summary>
+        </member>
+        <member name="M:HiAuto.Lbs.PositionUtilBak.GCJ02ToBD09(System.Double,System.Double)">
+            <summary>
+            火星坐标系 (GCJ-02) 与百度坐标系 (BD-09) 的转换算法 将 GCJ-02 坐标转换成 BD-09 坐标
+            </summary>
+        </member>
+        <member name="M:HiAuto.Lbs.PositionUtilBak.BD09ToGCJ02(System.Double,System.Double)">
+            <summary>
+            火星坐标系 (GCJ-02) 与百度坐标系 (BD-09) 的转换算法,将 BD-09 坐标转换成GCJ-02 坐标
+            </summary>
+        </member>
+        <member name="M:HiAuto.Lbs.PositionUtilBak.BD09ToWGS84(System.Double,System.Double)">
+            <summary>
+            (BD-09)-->84 
+            </summary>
+        </member>
+        <member name="M:HiAuto.Lbs.PositionUtilBak.WGS84ToBD09(System.Double,System.Double)">
+            <summary>
+            (BD-09)-->84 
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Common.WeatherInfo.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Common.WeatherInfo.Week">
+            <summary>
+            星期几
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Common.WeatherInfo.DayWeather">
+            <summary>
+            白天天气现象
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Common.WeatherInfo.NightWeather">
+            <summary>
+            晚上天气现象
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Common.WeatherInfo.DayTemp">
+            <summary>
+            白天温度
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Common.WeatherInfo.NightTemp">
+            <summary>
+            晚上温度
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Common.WeatherInfo.DayWind">
+            <summary>
+            白天风向
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Common.WeatherInfo.NightWind">
+            <summary>
+            晚上风向
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Common.WeatherInfo.DayPower">
+            <summary>
+            白天风力
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.Common.WeatherInfo.NightPower">
+            <summary>
+            晚上风力
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.GoogleMap.GoogleLbsParam">
+            <summary>
+            谷歌基站请求参数
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.GoogleMap.GoogleLbsParam.homeMobileCountryCode">
+            <summary>
+            移动国家代码 (MCC)
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.GoogleMap.GoogleLbsParam.homeMobileNetworkCode">
+            <summary>
+            移动网络代码 (MNC)
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.GoogleMap.GoogleLbsParam.radioType">
+            <summary>
+            移动无线网络类型。支持的值有 lte、gsm、cdma 和 wcdma
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.GoogleMap.GoogleLbsParam.carrier">
+            <summary>
+            运营商名称
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.GoogleMap.CellTower.cellId">
+            <summary>
+            小区的唯一标识符。在GSM上，这就是小区ID(CID)；CDMA网络使用的是基站ID(BID)。WCDMA网络使用UTRAN/GERAN小区标识 (UC-Id)
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.GoogleMap.CellTower.locationAreaCode">
+            <summary>
+            GSM 和 WCDMA 网络的位置区域代码 (LAC)。CDMA 网络的网络 ID (NID)
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.GoogleMap.CellTower.mobileCountryCode">
+            <summary>
+            移动国家代码
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.GoogleMap.CellTower.mobileNetworkCode">
+            <summary>
+            移动网络代码
+            </summary>
+        </member>
+        <member name="T:HiAuto.Lbs.GoogleMap.GoogleWiFiParam">
+            <summary>
+            WiFi定位请求参数
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.GoogleMap.GoogleWiFiParam.considerIp">
+            <summary>
+            指定当 Wi-Fi 和移动电话基站的信号不可用时，是否回退到 IP 地理位置
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.GoogleMap.GoogleWiFiParam.wifiAccessPoints">
+            <summary>
+            Wi-Fi接入点对象
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.GoogleMap.GoogleWiFi.macAddress">
+            <summary>
+            Wi-Fi 节点的 MAC 地址
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.GoogleMap.GoogleWiFi.signalStrength">
+            <summary>
+            信号强度
+            </summary>
+        </member>
+        <member name="F:HiAuto.Lbs.GoogleMap.GoogleWiFi.signalToNoiseRatio">
+            <summary>
+            信噪比
+            </summary>
+        </member>
+        <member name="M:HiAuto.Lbs.GoogleLbs.Regeo(System.String,System.Double,System.Double)">
+            <summary>
+            逆地理编码
+            </summary>
+            <param name="key">高德地图key</param>
+            <param name="lng">经度</param>
+            <param name="lat">纬度</param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.GoogleLbs.LbsLocation(System.String,HiAuto.Lbs.Lbs)">
+            <summary>
+            基站lbs查询位置
+            </summary>
+            <param name="key"></param>
+            <param name="lbs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.GoogleLbs.WiFiLocation(System.String,System.Collections.Generic.List{HiAuto.Lbs.WiFi},HiAuto.Lbs.Lbs)">
+            <summary>
+            优先wifi查询位置，否则基站lbs查询位置
+            </summary>
+            <param name="key"></param>
+            <param name="wifi"></param>
+            <param name="lbs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.GoogleLbs.MacAddress(System.String)">
+            <summary>
+            mac地址
+            </summary>
+            <param name="mac"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HiAuto.Lbs.GoogleLbs.ErrorInfo(System.String)">
+            <summary>
+            转换错误代码为状态描述
+            </summary>
+            <param name="code">谷歌错误码</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

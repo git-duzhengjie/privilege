@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0.98</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\Debug</OutputPath>
+    <DocumentationFile>E:\Acb.UPMS\Acb.UPMS\Acb.Plugin.PrivilegeManage\Acb.Plugin.PrivilegeManage\Doc\AcbPluginPrivilegeManageConstract.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dcp.Net.MQ.Rpc" Version="1.0.2.3" />
+  </ItemGroup>
+
+</Project>

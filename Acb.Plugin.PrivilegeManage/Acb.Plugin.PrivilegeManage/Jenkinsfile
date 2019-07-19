@@ -1,0 +1,65 @@
+pipeline {
+  agent any
+  stages {
+    stage('dotnet-publish') {
+      steps {
+	    sh 'dotnet build   -r ${PUBLISH_RUNTMIE} -c release ${ROOT_PATH}/${PROJECT_NAME}  -o ${PUBLISH_PATH}'
+      }
+    }
+    stage('copy dockerfile') {
+      steps {
+        sh 'cp ${ROOT_PATH}/${PUBLISH_PATH}/Docker/docker_run.sh ${ROOT_PATH}/${PUBLISH_PATH}/docker_run.sh'
+        sh 'cp ${ROOT_PATH}/${PUBLISH_PATH}/Docker/dockerfile ${ROOT_PATH}/${PUBLISH_PATH}/dockerfile'
+      }
+    }
+    stage('docker publish') {
+      steps {
+        sh '(docker rm -f ${CURRENT_CONTAINER_NAME}&&docker rmi -f ${CURRENT_IMAGE_NAME})|| echo "continue execute"'
+        sh 'chmod -R 777 ${ROOT_PATH}/${PUBLISH_PATH}/*.sh'
+        sh '''cd ${ROOT_PATH}/${PUBLISH_PATH}
+        ./docker_run.sh ${VERSION}'''
+      }
+    }
+	  stage('docker run') {
+      steps {
+        sh 'docker run -d -e RuntimeNameSpace=Dev -p 5010:9099  --privileged  --restart=always --name ${CURRENT_CONTAINER_NAME} ${CURRENT_IMAGE_NAME}'
+      }
+    }
+    stage('docker push server') {
+      steps {
+        sh 'docker tag ${CURRENT_IMAGE_NAME} ${PUSH_ADDRESS}/${CURRENT_IMAGE_NAME}'
+        sh 'docker push ${PUSH_ADDRESS}/${CURRENT_IMAGE_NAME}'
+        sh '(docker rmi -f ${PUSH_ADDRESS}/${CURRENT_IMAGE_NAME})|| echo "continue execute"'
+      }
+    }
+    stage('async_server_release') {
+      parallel {
+        stage('async server release') {
+          steps {
+            sh 'echo "notice server"'
+           // sh 'curl "${PUBLISH_CMD}"'
+          }
+        }
+        stage('docker logs') {
+          steps {
+            sh 'sleep 5s'
+            sh 'docker logs ${CURRENT_CONTAINER_NAME}'
+            sh 'sleep 15s'
+            ////sh '(docker stop ${CURRENT_CONTAINER_NAME})|| echo "continue execute"'
+          }
+        }
+      }
+    }
+  }
+  environment {
+    PUBLISH_FRAMEWORK = 'netcoreapp2.1'
+    PUBLISH_RUNTMIE = 'ubuntu.16.04-x64'
+    PUBLISH_PATH = 'publish'
+	VERSION=1.1
+    ROOT_PATH = './Acb.Plugin.PrivilegeManage/Acb.Plugin.PrivilegeManage'
+    PROJECT_NAME = 'Acb.Plugin.PrivilegeManage.csproj'
+    CURRENT_IMAGE_NAME = 'icb/privilege-manage:1.1'
+    CURRENT_CONTAINER_NAME = 'privilege-manage'
+    PUSH_ADDRESS='220.167.101.61:5000'
+  }
+}

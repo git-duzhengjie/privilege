@@ -1,0 +1,16 @@
+﻿FROM 220.167.101.61:5000/huajunsoft/dynamic-webapi
+COPY ./DynamicLib /app/DynamicLib
+COPY . /app/Plugins
+COPY ./ExternalPlugin /app/Plugins
+COPY ./Doc /app/Doc
+#COPY ./wwwroot /app/wwwroot
+WORKDIR /app
+RUN echo "nameserver 114.114.114.114" > /etc/resolv.conf
+RUN echo "$(sed 's/8.8.8.8/114.114.114.114/g' /etc/resolv.conf)" > /etc/resolv.conf
+RUN echo "nameserver 114.114.114.114" > /etc/resolv.conf
+RUN echo "121.43.162.235 market.icb" >> /etc/hosts
+RUN chmod +x Acb.MiddleWare.Web
+EXPOSE 9099/tcp
+EXPOSE 443/tcp
+ENTRYPOINT ["./Acb.MiddleWare.Web"]
+#ENTRYPOINT ["dotnet", "Acb.MiddleWare.Web.dll"]

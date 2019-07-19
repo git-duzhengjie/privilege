@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acb.Plugin.PrivilegeManage", "Acb.Plugin.PrivilegeManage\Acb.Plugin.PrivilegeManage.csproj", "{7353B1CB-40C8-43F7-8243-91251873DD43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestPrivilegeManage", "UnitTestPrivilegeManage\UnitTestPrivilegeManage.csproj", "{01C84E72-9BB9-411D-845E-E371D81E31C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acb.Plugin.PrivilegeManage.Constract", "Acb.Plugin.PrivilegeManage.Constract\Acb.Plugin.PrivilegeManage.Constract.csproj", "{D530FBFD-DAC3-4ECE-BAB2-64AD24DD4D19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestPrivilegeManage2", "UnitTestPrivilegeManage2\UnitTestPrivilegeManage2.csproj", "{0BAB99D7-0A60-4F41-BFBC-655E550FDE47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicWeb.Ant.TestIn1", "DynamicWeb.Ant.TestIn1\DynamicWeb.Ant.TestIn1.csproj", "{8EA480B0-E9F0-4BF3-9498-1276CAE6BD91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7353B1CB-40C8-43F7-8243-91251873DD43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7353B1CB-40C8-43F7-8243-91251873DD43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7353B1CB-40C8-43F7-8243-91251873DD43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7353B1CB-40C8-43F7-8243-91251873DD43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01C84E72-9BB9-411D-845E-E371D81E31C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01C84E72-9BB9-411D-845E-E371D81E31C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01C84E72-9BB9-411D-845E-E371D81E31C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01C84E72-9BB9-411D-845E-E371D81E31C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D530FBFD-DAC3-4ECE-BAB2-64AD24DD4D19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D530FBFD-DAC3-4ECE-BAB2-64AD24DD4D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D530FBFD-DAC3-4ECE-BAB2-64AD24DD4D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D530FBFD-DAC3-4ECE-BAB2-64AD24DD4D19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BAB99D7-0A60-4F41-BFBC-655E550FDE47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BAB99D7-0A60-4F41-BFBC-655E550FDE47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BAB99D7-0A60-4F41-BFBC-655E550FDE47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BAB99D7-0A60-4F41-BFBC-655E550FDE47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA480B0-E9F0-4BF3-9498-1276CAE6BD91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA480B0-E9F0-4BF3-9498-1276CAE6BD91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA480B0-E9F0-4BF3-9498-1276CAE6BD91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA480B0-E9F0-4BF3-9498-1276CAE6BD91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7A56BEA-C14F-4F80-9FC9-FC660AF463AD}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿{
+  "DbConfig": {
+    "AutoOrmType": 0,
+    "CurrentDBType": 5,
+    "_AccessDBViewModel": null,
+    "_OracleDBViewModel": null,
+    "_DB2DBViewModel": null,
+    "_SqlServerDBViewModel": null,
+    "_MySqlDBViewModel": null,
+    "_PgSqlDBViewModel": {
+      "DBAddress": "192.168.0.234",
+      "Port": 5432,
+      "DataSource": "orApr",
+      "UserID": "postgres",
+      "Password": null
+    }
+  },
+  "GetUserInfoUrl": "http://config.i-cbao.com:99/FleetGps/Login",
+  "SuperAuthorityId": 4002,
+  "SessionTimeOutMillisecond": 1200000,
+  "SecretInfoList": [
+    {
+      "SecretInfo": {
+        "AppId": "C763ED30-DECF-4B30-8B85-5D27C27515AC",
+        "AppSecret": "702DC713-4A11-4368-987C-91F92B0CA7BF"
+      }
+    },
+    {
+      "SecretInfo": {
+        "AppId": "",
+        "AppSecret": ""
+      }
+    },
+    {
+      "SecretInfo": {
+        "AppId": "",
+        "AppSecret": ""
+      }
+    }
+  ]
+}
