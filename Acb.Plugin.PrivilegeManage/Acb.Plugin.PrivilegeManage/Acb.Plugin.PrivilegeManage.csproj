@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <PackageReference Include="CDynamic.MiddleWare.Core" Version="1.0.4.8" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.3.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.7.0" />
   </ItemGroup>
 
   <ItemGroup>
